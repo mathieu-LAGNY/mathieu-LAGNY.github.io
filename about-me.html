@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mathieu LAGNY</title>
+  <meta charset="utf-8">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Social media Font -->
+  <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
+
+  <!-- Materialize: Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body class="grey lighten-3">
+  <div class="bg-img"></div>
+  <header>
+    <nav class="nav-wraper white">
+      <div class="container">
+        <a href="#" data-target="slide-out" class="brand-logo grey-text text-darken-3 sidenav-trigger">Mathieu</a>
+        <a href="./index.html" data-target="slide-out" class="brand-logo grey-text text-darken-3 hide-on-med-and-down">Mathieu LAGNY</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="grey-text text-darken-3" href="#formation">Ma Formation</a></li>
+          <li><a class="grey-text text-darken-3" href="#hobby">Loisirs</a></li>
+          <li><a class="waves-effect waves-light btn light-blue" href="about-me.en.html"><i class="material-icons right">language</i>English Version</a></li>
+        </ul>
+      </div>
+    </nav>
+  	<ul id="slide-out" class="sidenav">
+  	  <li>
+    		<div class="user-view">
+    		  <div class="background">
+    			 <img alt="background" src="images/bg.jpg">
+  		    </div>
+  		    <a href="#user"><img alt="avatar" class="circle" src="./images/avatar.jpg"></a>
+  		    <a href="./index.html"><span class="white-text name">Mathieu LAGNY</span></a>
+  		    <a href="#email"><span class="white-text email">m.lagny@laposte.net</span></a>
+  		  </div>
+  	  </li>
+      <li><a class="waves-effect waves-light btn-flat" href="about-me.en.html">English Version</a></li>
+  	  <li><a class="grey-text text-darken-3 waves-effect" href="#formation">Ma Formation</a></li>
+  	  <li><a class="grey-text text-darken-3 waves-effect" href="#hobby">Loisirs</a></li>
+  	  <li><a class="btn blue darken-4 waves-effect waves-light modal-trigger" href="#contact">Contact</a></li>
+  	  <li><a onclick="M.toast({html: 'CV ouvert'})" href="./doc/CV.pdf" class="waves-effect waves-light btn blue darken-4">DOWNLOAD CV</a></li>
+  	</ul>
+  </header>
+  <div class="container" id="wrapper">
+  	<div class="row">
+  	  <h1 id="books" class="scrollspy center white-text">My Formation</h1>
+  	  <div class="col s6 center">
+        <a href="https://sites.google.com/view/mathieu-lagny/accueil/formation" class="btn-large waves-effect waves-light blue darken-4 list-link">Formation</a>         
+      </div>
+      <div class="col s6 center">
+        <a onclick="M.toast({html: 'CV ouvert'})" href="./doc/CV.pdf" class="waves-effect waves-teal btn-large blue darken-4">Download CV</a>
+      </div>
+	</div>
+
+  	<div class="row">
+      <h1 id="hobby" class="scrollspy center white-text">Loisirs</h1>
+      <div class="card">
+        <div class="card-content ">
+          <div class="row valign-wrapper">
+	        <div class="col s12 center-align valign-wrapper">
+	          	<div class="col s12 l3 center-align">
+	              <img alt="avatar" src="./images/oeil.png" class="responsive-img circle"> 
+	            </div>
+	            <div class="col s12 l3 center-align">
+	          		<a href="https://www.codingame.com/profile/319d7d15f80ad56fe7bba3771c016bb88429432" class="btn waves-effect waves-light blue darken-4 list-link">Codingame</a>
+	          	</div>
+	          	<div class="col s12 l6 center-align">
+	              <img alt="kigard" src="./images/banner-kigard.jpg" class="responsive-img"> 
+	          	  <a href="https://www.kigard.fr/" class="btn waves-effect waves-light blue darken-4 list-link">Les Terres de Kigard</a>
+	          	</div>
+           	</div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="contact" class="modal">
+      <div class="modal-content">
+        <h2 class="scrollspy">Contact</h2>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">Prénom</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Nom</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Mot de passe</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a onclick="M.toast({html: 'Vous avez partagé vos informations de contact'})" class="waves-effect waves-light btn blue darken-4 modal-close">Envoyer<i class="material-icons right">send</i></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container">
+  	<div class="row">
+  	  <div class="col s12">
+  		<ul class="pagination center">
+  		<li class="btn-floating btn-large waves-effect waves-light blue darken-4"><a href="./index.html"><i class="material-icons">chevron_left</i></a></li>
+  		<li class="btn-floating btn-large waves-effect waves-light blue darken-4"><a href="./projects.html" class="white-text">1</a></li>
+  		<li class="btn-floating btn-large waves-effect waves-light blue darken-4"><a href="./index.html"><i class="material-icons">home</i></a></li>
+  		<li class="btn-floating btn-large waves-effect waves-light blue darken-4"><a href="#!"><i class="material-icons">location_on</i></a></li>
+  		<li class="btn-floating btn-large waves-effect waves-light blue darken-4"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  		</ul>
+  	  </div>
+  	</div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+      $('.sidenav').sidenav();
+      $('.modal').modal();
+      $('.collapsible').collapsible();
+    });
+  </script>
+</body>
+</html>
